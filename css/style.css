@@ -165,3 +165,22 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+.headerBox { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width : 61px;
+    height : 19px;
+}
+
+ul {
+     display: inline-block; 
+}
+
+.footerBox {
+        display: flex;
+        justify-content: space-around;  
+}
