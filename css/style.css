@@ -188,17 +188,15 @@ ul {
 .mainBox {
     display: flex;
     flex-direction: column;   
-
 }
 
 .hebergements-cards img {
-    
+    width: fit-content;
     height: 136px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .hebergements-cards {
-
     padding-left: 15px;
     display: flex;
     flex-direction: row;
@@ -215,7 +213,7 @@ ul {
 
 .activites-cards img {
 
-    width: 260.5px;
+    width: 280.5px;
     height: 380px;       
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -229,4 +227,52 @@ ul {
     justify-content: space-between;
     box-sizing: border-box;
    
+}
+
+.search {
+    width: 60%;   
+
+}
+
+.recherche {
+    width: 50%;
+
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+
+.filtres {
+    
+
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+   
+}
+
+.filterText {
+   padding-left: 5px;
+
+
+}
+
+.infoText {
+    padding-left: 10px;
+
+}
+
+.buttonSearch {
+    color: white;
+    background-color: var(--main-color);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
+
 }
