@@ -60,6 +60,7 @@ a {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+    margin-top: 33px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -170,6 +171,20 @@ a {
 .headerBox { 
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+}
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.hebergementLink {
+  border-top-color: var(--main-color) ; 
+  color: var(--main-color);  
+  border-top-width:thick ;
+  border-top-style: solid ;
 }
 
 .logo {
@@ -177,22 +192,29 @@ a {
     height : 19px;
 }
 
-ul {
-     display: inline-block; 
+.footerBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: var(--main-bg-color);
+}  
+
+.footerBox div {
+    width: 31%;
 }
 
-.footerBox {
-        display: flex;
-        justify-content: space-around;  
-}
 .mainBox {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    margin-top: 50px;  
+
 }
 
 .hebergements-cards img {
-    width: fit-content;
     height: 136px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -205,29 +227,61 @@ ul {
     flex-wrap: wrap;
 } 
 
-/****** Activites***********/
-.activites {
-    width: 97%;
+.hebergements-cards .card-content {   
+    padding-left: 15px;
 }
 
+.hebergements-cards a {
+    width: 30%;
+    margin-top: 33px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 5px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin: 0;
+}
+
+/****** Activites***********/
+.activites {
+    width: 100%;  
+    padding-top: 33px;  
+}
+
+.activites .section-title {
+    padding-left: 15px;
+}
 
 .activites-cards img {
-
-    width: 280.5px;
+    width: 100%;
     height: 380px;       
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .activites-cards {
-
     padding-left: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-   
 }
+
+.activites-cards .card-content {   
+    padding-left: 15px;
+}
+
+.activites-cards a {
+    width: 24%;
+    margin-top: 33px;
+}
+
 
 .search {
     width: 60%;   
@@ -235,8 +289,7 @@ ul {
 }
 
 .recherche {
-    width: 50%;
-
+    width: 50%;  
     padding-left: 15px;
     display: flex;
     flex-direction: row;
@@ -245,16 +298,33 @@ ul {
    
 }
 
-.filtres {
-    
+.recherche .fa-solid {
+    color: black;
+    background-color:darkgrey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px
+   
+}
 
-    padding-left: 15px;
+
+.filtres {        
+    padding-left: 15px;  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box;
-    
-   
+    box-sizing: border-box;   
+}
+
+.filtres h5 {
+    border-radius: 20px; 
+    border-style:solid; 
+    border-width: 3px;
+    padding: 10px;
+    border-color: var(--main-bg-color);
+}
+
+.filtres h5:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .filterText {
@@ -271,8 +341,10 @@ ul {
 .buttonSearch {
     color: white;
     background-color: var(--main-color);
-    border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 30px;
+    font-weight: bold;
 
 
 }
