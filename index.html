@@ -10,55 +10,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="main-container">
         <header>
-          <div class="headerBox">
-            <div class="logoBox">
+          <div class="header-box">
+            <div class="logo-box">
                 <img class="logo" src="images/logo/Booki.png" alt="logo Booki">
             </div>
-            <div class="navBox">
-                <a href="">Hébergements</a>
-                <a href="">Activités</a>                
-            </div>
+            <nav class="nav-box">
+                <a href="#hebergements">Hébergements</a>
+                <a href="#activites">Activités</a>                
+            </nav>
           </div>
         </header>
         <main>
-            <div class="mainBox">
+            <div class="main-box">
                 <div class="search"> 
                     <section>
                         <h2 class="section-title">Trouvez un hébergement pour vos vacances de rêve</h2>  
-                        <p> En plein centre-ville ou en pleine nature</p>
-                        <div class="recherche"> 
-                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                            <span>Marseilles, France</span>
-                            <button class="buttonSearch">Rechercher</button>                                        
+                        <p>En plein centre-ville ou en pleine nature</p>
+                        <div class="search-bar"> 
+                            <form method="post" action="#">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <input type="text" value="Marseilles, France">                              
+                                <button class="button-search" type="submit">
+                                    <span class="button-search-text">Rechercher</span>
+                                    <span class="button-search-icon"><i class="fa-solid fa-search fa-sm" aria-hidden="true"></i></span> 
+                                </button>                            
+                            </form>                                                         
                         </div>
-                        <div class="filtres">
-                            <h4 class="filtresTitre">Filtres</h4>
-                            <div class="filtreCategories">
-                                <h5><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i><span class="filterText">Economique</span></h5>
+                        <div class="filters">
+                            <h4 class="filter-title">Filtres</h4>
+                            <div class="filter-categories">
+                                <h5><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i><span class="filter-text">Economique</span></h5>
                             
-                                <h5><i class="fa-solid fa-person" aria-hidden="true"></i><span class="filterText">Familial</span></h5>
+                                <h5><i class="fa-solid fa-person" aria-hidden="true"></i><span class="filter-text">Familial</span></h5>
                     
-                                <h5><i class="fa-solid fa-heart" aria-hidden="true"></i><span class="filterText">Romantique</span></h5>
+                                <h5><i class="fa-solid fa-heart" aria-hidden="true"></i><span class="filter-text">Romantique</span></h5>
                             
-                                <h5><i class="fa-solid fa-fire" aria-hidden="true"></i><span class="filterText">Nos pépites</span></h5>
+                                <h5><i class="fa-solid fa-fire" aria-hidden="true"></i><span class="filter-text">Nos pépites</span></h5>
                             </div>
                         </div>
                         <div class="informations">
-                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i><span class="infoText">Plus de 500 logements sont disponibles dans cette ville</span>
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i><span class="info-text">Plus de 500 logements sont disponibles dans cette ville</span>
 
                         </div>
                     </section> 
                 </div>  
                
                 <div class="hebergements-and-populaires">
-                    <section class="hebergements">                        
+                    <section class="hebergements" id="hebergements">                        
                         <h2 class="section-title">Hébergements à Marseilles</h2>  
                         <div class="hebergements-cards">
                             <a href="#">
@@ -245,7 +250,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="activites"> 
+                <div class="activites" id="activites"> 
                     <section>
                         <h2 class="section-title"> Activités à Marseilles</h2>                           
                         <div class="activites-cards">
@@ -299,7 +304,7 @@
             </div>
         </main>
         <footer>
-            <div class="footerBox">               
+            <div class="footer-box">               
                 <article>
                     <h3> A propos</h3>
                     <p> Fonctionnement du site</p>
