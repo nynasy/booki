@@ -375,15 +375,12 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
   }
 
 p {
     font-size: 16px;
     font-weight: 400;
 }
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -618,14 +615,12 @@ p {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;  
         width: 50px;
-
     }   
     
     .search-bar input {
         width: 90%;
     }   
     
-
     .search .filters {        
         flex-direction: column;     
         width: 100%; 
@@ -637,7 +632,6 @@ p {
         flex-wrap: wrap; 
         justify-content: flex-start;
     }
-
     
     .search .filters .filter-title {  
         width: 100%;
@@ -654,8 +648,7 @@ p {
         font-weight: 700;
         font-size: 14px;
         width: 162px;
-     }
-  
+     }  
 
 }
 
@@ -670,5 +663,4 @@ p {
         font-size: 14px;
         font-weight: 400;
     }
-
 }
